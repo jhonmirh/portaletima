@@ -9,7 +9,6 @@ const HomeContainer = () => {
   return (
     <div>
       <HeroSection />
-      <CarouselComponent />
       <FeatureSection />
       <ServicesSection />
       <Testimonials />
