@@ -53,7 +53,7 @@ const RegisterGooglePage = () => {
           <p>Tu Email: ${emailgoogle}</p>
           <p>
             Ahora puedes usar tu cuenta de Google para registrarte en nuestra plataforma. <br />
-            Completa tu Registro con tus datos personales Numero Telefónico y DnI.
+            Completa tu Registro con tus datos personales Número Telefónico y Cédula de Identidad.
           </p>
         `,
         icon: 'info',

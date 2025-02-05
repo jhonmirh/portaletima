@@ -51,9 +51,9 @@ export const velidateFormRegister = (form: valuesTypesRegisterPrueba) => {
 
   // Validar el DNI
   if (!form.dni) {
-    errors.dni = "El DNI es requerido";
+    errors.dni = "La Cédula es requerida";
   } else if (!regexDni.test(form.dni)) {
-    errors.dni = "El DNI debe tener entre 5 y 15 caracteres alfanuméricos.";
+    errors.dni = "La Cédula debe tener entre 7 y 15 caracteres alfanuméricos.";
   }
 
   return errors;

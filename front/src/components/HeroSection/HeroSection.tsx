@@ -41,11 +41,10 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
           >
             <span className="text-grisOscuro font-secondary">
-              El hotel perfecto. Si buscas unas vacaciones perfectas y recuerdos
-              inolvidables, estás en el lugar indicado. Planifiquemos una
-              estancia a tu medida, con los mejres Servicios, Atención en
-              Habitación, Spa, Gimnasio, Peluqueria Profesional, Desayunos
-              Buffet, la mejor Seguridad y mucho mas.
+              Las escuelas técnicas junto con las empresas responden a los
+              requerimientos económicos para generar oportunidades laborales,
+              crear nuevas fuentes de empleo, productos, bienes y servicios que
+              contribuyen en el mejoramiento de la calidad de vida de un país.
             </span>
           </motion.div>
         )}

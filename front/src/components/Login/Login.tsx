@@ -86,7 +86,7 @@ function LoginForm() {
     <div className={styles.containerp}>
       <form onSubmit={handleSubmit} className={styles.container}>
         <div className={styles.imgContainer}>
-          <Image src="/login.jpg" alt="Login" width={500} height={500} />
+          <Image src="/fotosetima/login.jpg" alt="Login" width={500} height={500} />
         </div>
 
         <div className={styles.formContainer}>

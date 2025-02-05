@@ -68,8 +68,8 @@ const Testimonials = () => {
         <div className="mb-8">
           <h2 className="text-[3rem]">Testimonios</h2>
           <p>
-            Descubre como nuestros huéspedes han vivido experiencias
-            inolvidables con nosotros.
+            Descubre como nuestros Estudiantes y Representantes han vivido 
+            la mejor Formación Técnica con el personal Calificado.
           </p>
         </div>
 

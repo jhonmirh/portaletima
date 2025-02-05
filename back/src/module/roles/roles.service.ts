@@ -19,8 +19,8 @@ export class RolesService {
     return this.rolesRepository.getAllRoles();
   }
 
-  async getRoleByNameCliente(): Promise<Role> {
-    const roleName = 'Cliente';
+  async getRoleByNameRepresentante(): Promise<Role> {
+    const roleName = 'Representante';
     //const roleName = 'Administrador';
     const role = await this.rolesRepository.findByName(roleName);
     if (!role) {

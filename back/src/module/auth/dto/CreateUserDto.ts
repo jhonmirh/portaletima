@@ -79,7 +79,7 @@ export class CreateUserDto {
    */
    @ApiProperty({
     example: '12345678A',
-    description: 'Documento Nacional de Identidad (DNI).',
+    description: 'Cedula de Identidad',
   })
   @IsString()
   @IsNotEmpty()

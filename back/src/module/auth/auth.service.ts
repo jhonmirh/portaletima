@@ -76,8 +76,8 @@ export class AuthService {
   
     const hashedPassword = await bcrypt.hash(createUserDto.password, 10);
   
-    const clienteRole = await this.rolesService.getRoleByNameCliente();
-    const roleId = clienteRole.id;
+    const RepreRole = await this.rolesService.getRoleByNameRepresentante();
+    const roleId = RepreRole.id;
   
     const newUser = this.userRepository.create({
       name: createUserDto.name,

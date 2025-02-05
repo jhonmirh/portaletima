@@ -16,41 +16,24 @@ const ServicesSection = () => {
 
   const services: Service[] = [
     {
-      name: "Desayuno Buffet",
-      icon: "/breakfast.svg",
-      photos: ["/room1.jpg", "/room2.jpg", "/room3.jpg"],
+      name: "Servicio de Transporte",
+      icon: "/bus.png",
+      photos: ["/fotosetima/uno.jpg", "/fotosetima/dos.jpg", "/fotosetima/tres.jpg"],
       route: "breakfast",
     },
     {
-      name: "Gimnasio",
-      icon: "/gym.svg",
-      photos: ["/gym1.jpeg", "/gym2.jpeg", "/gym3.jpeg"],
+      name: "Unidad de Producción",
+      icon: "/up.png",
+      photos: ["/fotosetima/cuatro.jpg", "/fotosetima/cinco.jpg", "/fotosetima/seis.jpg"],
       route: "gym",
     },
     {
-      name: "Piscina",
-      icon: "/swimming.svg",
-      photos: ["/pool1.jpeg", "/pool2.jpeg", "/pool3.jpeg"],
+      name: "Comedor",
+      icon: "/comedor.png",
+      photos: ["/fotosetima/7.jpg", "/fotosetima/8.jpg", "/fotosetima/9.jpg"],
       route: "swimming",
     },
-    {
-      name: "Peluquería",
-      icon: "/hair.svg",
-      photos: ["/hair1.jpg", "/hair2.jpg", "/hair3.jpg"],
-      route: "hair",
-    },
-    {
-      name: "Spa",
-      icon: "/spa.svg",
-      photos: ["/spa1.jpg", "/spa2.jpg", "/spa3.jpg"],
-      route: "spa",
-    },
-    {
-      name: "Servicio de habitación",
-      icon: "/service.svg",
-      photos: ["/room1.jpg", "/room2.jpg", "/room3.jpg"],
-      route: "roomservice",
-    },
+   
   ];
 
   const handleMouseEnter = (name: string) => {
@@ -65,19 +48,19 @@ const ServicesSection = () => {
     <section className="text-white bg-grisOscuro p-10">
       <div className="container mx-auto text-center">
         <div className="mb-[2rem]">
-          <h2 className="text-[2.5rem] uppercase">Servicios Exclusivos</h2>
-          <span className="font-secondary text-grisClaro">
-            Cada momento, un servicio a tu medida. <br /> En nuestro hotel, nos
-            aseguramos de que cada detalle de tu estancia sea perfecto.
+          <h2 className="text-[2.5rem] uppercase">Servicios Estudiantil</h2>
+          <span className="font-secondary text-white">
+            Cada momento, cada día en nuestra Institución. <br /> Escuela Técnica para todos,
+            aseguramos la mejor formación con los servicios disponibles.
           </span>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+        <div className="flex justify-center gap-6 flex-wrap">
           {services.map((service, index) => (
             <Link
               key={service.name}
               href={`/services/${service.route}`}
-              className="relative flex flex-col items-center transition-transform duration-300 hover:scale-110 border border-grisClaro py-4 z-10"
+              className="relative flex flex-col items-center justify-between w-[300px] h-[150px] min-h-[150px] transition-transform duration-300 hover:scale-110 border border-t-yellow-300 py-4 z-10"
               onMouseEnter={() => handleMouseEnter(service.name)}
               onMouseLeave={handleMouseLeave}
             >
@@ -129,6 +112,9 @@ const ServicesSection = () => {
             </Link>
           ))}
         </div>
+
+
+        
       </div>
     </section>
   );

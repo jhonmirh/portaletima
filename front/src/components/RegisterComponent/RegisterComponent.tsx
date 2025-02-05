@@ -10,7 +10,7 @@ import password from "../../../public/Form Íconos/password.svg";
 import confirmPassword from "../../../public/Form Íconos/repetir.svg";
 import phone from "../../../public/Form Íconos/phone.svg";
 import DNI from "../../../public/Form Íconos/DNI_1.svg";
-import registerImg from "../../../public/register_prueba.png";
+import registerImg from "../../../public/fotosetima/register.jpg";
 import Style from "./register.module.css";
 import Loading from "../Loading/Loading";
 import { signIn } from "next-auth/react";
@@ -169,7 +169,11 @@ const RegisterComponent = () => {
             Teléfono
           </label>
         </div>
-        {/*Dni*/}
+
+
+
+
+
         {errors.dni && <p className={`${Style.validaciones} text-xs m-2`}>{errors.dni}</p>}
         <div className={Style.inputLabelGroup}>
           <Image
@@ -190,9 +194,12 @@ const RegisterComponent = () => {
             placeholder=" "
           />
           <label htmlFor="dni_id" className={Style.labelForm}>
-            DNI
+            Cédula
           </label>
         </div>
+
+
+
 
         <p className={Style.tienesCuenta}>
           ¿Ya tienes una cuenta? <a href="/login">INICIA SESIÓN</a>

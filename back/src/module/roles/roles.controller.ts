@@ -32,12 +32,12 @@ export class RolesController {
   }
 
 //buscar por nombre de rol
-  @Get('cliente')
+  @Get('Representante')
 @HttpCode(HttpStatus.OK)
-@ApiResponse({ status: 200, description: 'Rol Cliente encontrado.' })
-@ApiResponse({ status: 404, description: 'Rol Cliente no encontrado.' })
-async getRoleCliente(): Promise<Role> {
-  return this.rolesService.getRoleByNameCliente();
+@ApiResponse({ status: 200, description: 'Rol Representante encontrado.' })
+@ApiResponse({ status: 404, description: 'Rol Representante no encontrado.' })
+async getRoleRepresentante(): Promise<Role> {
+  return this.rolesService.getRoleByNameRepresentante();
 }
 
 

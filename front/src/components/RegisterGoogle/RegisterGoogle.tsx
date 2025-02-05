@@ -186,7 +186,9 @@ const RegisterGoogle: React.FC<RegisterGoogleProps> = ({
           </label>
         </div>
 
-        {errors.dni && <p className="text-red-500 text-xs m-2">{errors.dni}</p>}
+
+
+        {errors.dni && <p className={`${Style.validaciones} text-xs m-2`}>{errors.dni}</p>}
         <div className={Style.inputLabelGroup}>
           <Image
             src={DNI}
@@ -206,16 +208,13 @@ const RegisterGoogle: React.FC<RegisterGoogleProps> = ({
             placeholder=" "
           />
           <label htmlFor="dni_id" className={Style.labelForm}>
-            DNI
+            Cédula
           </label>
         </div>
-        <input
-          type="text"
-          name="authProvider"
-          value="google"
-          disabled
-          style={{ display: "none" }}
-        />
+
+
+
+
         <p className={Style.tienesCuenta}>
           ¿Ya tienes una cuenta? <a href="/login">INICIA SESIÓN</a>
         </p>

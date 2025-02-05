@@ -140,20 +140,20 @@ const ContactForm = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <div className="flex-grow flex justify-center items-center">
-        <div className="flex bg-beige justify-center items-center p-[4rem] gap-10">
+        <div className="flex bg-lime-200 justify-center items-center p-[4rem] gap-10">
           <div className="flex flex-col lg:flex-row p-2 rounded-lg space-y-8 lg:space-y-0 lg:space-x-8 max-w-4xl">
             <div className="flex-1 max-w-md">
               <span className="font-primary text-mostaza uppercase">
-                Elysium
+                Escuela Técnica Isaías Medina Angarita
               </span>
               <h6 className="font-primary text-[2.5rem] text-grisOscuro">
                 CONTACTENOS
               </h6>
               <p className="my-6">
                 Estamos aquí para ayudarte. No dudes en ponerte en contacto con
-                nosotros para cualquier consulta, reserva o comentario. <br />
+                nosotros para cualquier consulta, Solicitu de Cupo o comentario. <br />
                 Nuestro equipo está disponible para brindarte la mejor atención
-                y asegurar que tu experiencia con nosotros sea inolvidable.
+                y asegurar que tu Representado Tenga la mejor Formación.
               </p>
               <div className="flex items-center border-b-1 border-mostaza py-4">
                 <Image
@@ -163,7 +163,7 @@ const ContactForm = () => {
                   height={24}
                 />
                 <span className="text-grisOscuro font-secondary ml-4">
-                  555 123 456789
+                  +582777576584
                 </span>
               </div>
               <div className="flex items-center border-b-1 border-mostaza py-4">
@@ -174,7 +174,7 @@ const ContactForm = () => {
                   height={24}
                 />
                 <span className="text-grisOscuro font-secondary ml-4">
-                  example@gmail.com
+                  etaima.tecnicae@gmail.com
                 </span>
               </div>
               <div className="flex items-center py-4">
@@ -185,7 +185,7 @@ const ContactForm = () => {
                   height={24}
                 />
                 <span className="text-grisOscuro font-secondary ml-4">
-                  Calle falsa 123, Nº 789
+                  Abejales Calle 4 Con carreras 4 y 5 Centro 1
                 </span>
               </div>
             </div>
@@ -261,7 +261,7 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
-      <Branches />
+      
     </div>
   );
 };

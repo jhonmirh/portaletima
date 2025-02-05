@@ -142,7 +142,7 @@ const TestimonialForm = () => {
     <div className="w-full h-screen flex items-center justify-center p-2">
       <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-7xl gap-5">
         <div className="w-full md:w-2/5">
-          <Image src="/fondo3.png" alt="Testimonios" width={700} height={700} />
+          <Image src="/fotosetima/testimonio.jpg" alt="Testimonios" width={700} height={700} />
         </div>
         <form
           onSubmit={handleSubmit}
@@ -150,7 +150,7 @@ const TestimonialForm = () => {
         >
           <div className="text-center mb-2">
             <h2 className="text-2xl font-bold mb-2">{userData?.userData.name}</h2>
-            <h2 className="text-2xl font-bold">Crea Tu Testimonio en Elysium</h2>
+            <h2 className="text-2xl font-bold">Crea Tu Testimonio en ET ISAÍAS MEDINA ANGARITA</h2>
           </div>
 
           <div className="mb-4">
@@ -211,7 +211,7 @@ const TestimonialForm = () => {
           </div>
 
           <div className="mb-4">
-            <h3 className="text-lg font-semibold mb-2">Clasifica Tu Estadia en Elysium</h3>
+            <h3 className="text-lg font-semibold mb-2">Clasifica Tu Estadia en ET ISAÍAS MEDINA ANGARITA</h3>
             <div className="flex items-center space-x-2 mb-4">
               {[1, 2, 3, 4, 5].map((value) => (
                 <svg

@@ -15,8 +15,8 @@ const Footer = () => {
             />
             <div className="flex flex-col items-start">
               <h3 className="text-white uppercase">Dirección</h3>
-              <span className="font-secondary text-grisClaro">
-                Ejemplo de ubicación
+              <span className="font-secondary text-lime-300">
+                Abejales, Estado Táchira, Centro 1
               </span>
             </div>
           </div>
@@ -30,8 +30,8 @@ const Footer = () => {
             />
             <div className="flex flex-col items-start">
               <h3 className="text-white uppercase">Comunicate con Nosotros</h3>
-              <span className="font-secondary text-grisClaro">
-                555-555-5555
+              <span className="font-secondary text-lime-300">
+                +582777576584
               </span>
             </div>
           </div>
@@ -39,9 +39,9 @@ const Footer = () => {
           <div className="flex items-center gap-2">
             <Image src="/saul/mail.svg" alt="Email" width={40} height={40} />
             <div className="flex flex-col items-start">
-              <h3 className="text-white uppercase">Consultas y reservas</h3>
-              <span className="font-secondary text-grisClaro">
-                proyectohenrypt21b@gmail.com
+              <h3 className="text-white uppercase">Consultas y Cupo</h3>
+              <span className="font-secondary text-lime-300">
+                etima.tecnica@gmail.com
               </span>
             </div>
           </div>

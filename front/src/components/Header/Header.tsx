@@ -30,7 +30,7 @@ const Header = () => {
   <div className="flex flex-wrap gap-6 items-center">
     {userData?.userData.role.name === "Administrador" ? (
       <>
-        <Link href="/clientlist" className="hover:text-mostaza text-center block">
+        {/* <Link href="/clientlist" className="hover:text-mostaza text-center block">
           Historial <br /> de Clientes
         </Link>
         <Link href="/roomsManagement" className="hover:text-mostaza text-center block">
@@ -38,7 +38,7 @@ const Header = () => {
         </Link>
         <Link href="/employee" className="hover:text-mostaza text-center block">
           Crear <br /> Empleados
-        </Link>
+        </Link> */}
         <Link href="/testimonialsadmin" className="hover:text-mostaza text-center block">
           Aprobar <br /> Testimonios
         </Link>

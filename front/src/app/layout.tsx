@@ -2,7 +2,7 @@
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer/Footer";
-import Chatbot from "@/components/chatbot/chatbot";
+
 import { LogginProvider } from "@/context/logginContext";
 import Providers from "./providers";
 import Sidebar from "@/components/SideBar";
@@ -22,7 +22,7 @@ export default function RootLayout({
 
               <main>{children}</main>
 
-              <Chatbot />
+
               <Footer />
             </LogginProvider>
           </ProvidersAuth>
