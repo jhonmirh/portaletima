@@ -13,7 +13,7 @@ export class Room {
   @ApiProperty({
 
     example: 'f34b2e7c-3ed5-4f91-9342-bf6c537dfb47',
-    description: 'Identificador único de la habitación.',
+    description: 'Identificador único de la mención.',
   })
   @PrimaryGeneratedColumn('uuid')
   id: string;
@@ -24,8 +24,8 @@ export class Room {
    * @example "Habitación Deluxe"
    */
   @ApiProperty({
-    example: 'Habitación Deluxe',
-    description: 'Título o nombre de la habitación.',
+    example: 'Técnico Profesional',
+    description: 'Título o nombre de la mención.',
   })
 
   @Column({ unique: true })
@@ -72,8 +72,8 @@ export class Room {
    * @example "https://example.com/room.jpg"
    */
   @ApiProperty({
-    example: 'https://example.com/room.jpg',
-    description: 'URL de la imagen representativa de la habitación.',
+    example: 'https://example.com/mencion.jpg',
+    description: 'URL de la imagen representativa de la mencion.',
   })
   @Column({ nullable: true })
   image: string;
@@ -98,8 +98,8 @@ export class Room {
    */
   @ApiProperty({
     example:
-      'Habitación espaciosa con vistas al mar y todas las comodidades modernas.',
-    description: 'Descripción detallada de la habitación.',
+      'Técnico Profesional en Agropecuaria mención Cincias Agricolas',
+    description: 'Descripción detallada de la mención',
   })
   @Column({ type: 'text', nullable: false })
   description: string;

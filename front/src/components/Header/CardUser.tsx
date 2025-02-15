@@ -60,7 +60,7 @@ const CardUser = () => {
         <div className="absolute right-0 mt-2 flex w-52 flex-col rounded-sm shadow-mostaza bg-grisOscuro">
           
           
-          {userData?.userData.role.name === "Cliente" && (
+          {userData?.userData.role.name === "Representante" && (
           <ul className="flex flex-col gap-3 border-mostaza">
             <li>
               <Link

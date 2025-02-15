@@ -167,7 +167,7 @@ const RegisterForm = () => {
           </div>
 
           <div>
-            <label className="block text-lg font-medium">Descripción</label>
+            <label className="block text-lg font-medium">Descripción de la Mención</label>
             <textarea
               name="description"
               placeholder="Información de la habitación"
@@ -213,7 +213,7 @@ const RegisterForm = () => {
 
         <div className="flex flex-col gap-6">
           <div>
-            <label className="block text-lg font-medium">Título</label>
+            <label className="block text-lg font-medium">Título a Ofrecer</label>
             <input
               name="title"
               placeholder="Nombre de la habitación"
@@ -231,7 +231,7 @@ const RegisterForm = () => {
           </div>
 
           <div>
-            <label className="block text-lg font-medium">Categoría</label>
+            <label className="block text-lg font-medium">Modalidad</label>
             <select
               name="roomType"
               value={formData.roomType}
@@ -242,10 +242,8 @@ const RegisterForm = () => {
               <option value="" disabled>
                 Selecciona una opción
               </option>
-              <option value="luxury">Habitación de lujo</option>
-              <option value="standard">Habitación estándar</option>
-              <option value="suite">Suite</option>
-              <option value="family">Habitación familiar deluxe</option>
+              <option value="luxury">Media Técnica</option>
+              <option value="standard">Media Profesional</option>
             </select>
             <span
               className={`text-red-500 text-xs mt-1 ${errors.roomType ? "" : "invisible"

@@ -6,7 +6,7 @@ const page = () => {
     <ProtectedAdmin>
       <div className="min-h-[75vh] pt-10">
         <h1 className="flex justify-center text-2xl pb-4">
-          Gestión de alojamientos
+          Gestión de Menciones Resolución 31789 Octubre 2023
         </h1>
         <RegisterForm />
       </div>

@@ -19,63 +19,62 @@ export class NotificationsService {
   }
 
   async sendWelcomeEmail(to: string, username: string): Promise<void> {
-
     const mailOptions = {
-      from: '"Elysium Hotel & Resort" <tu-email@gmail.com>',
+      from: '"Escuela Técnica Isaías Medina Angarita" <tu-email@gmail.com>',
       to,
-      subject: '¡Bienvenido/a a Elysium, tu escape de lujo en California! 🌴✨',
+      subject: '¡Bienvenido/a a Escuela Técnica Isaías Medina Angarita! ',
       text: `Hola ${username},
   
-  ¡Gracias por registrarte en Elysium Hotel & Resort! Nos alegra tenerte como parte de nuestra exclusiva comunidad de huéspedes.
+  ¡Gracias por registrarte en Escuela Técnica Isaías Medina Angarita. Nos alegra tenerte como parte de nuestra sociedad de aprendizaje.
   
-  En Elysium, nuestra misión es ofrecerte una experiencia única de lujo en el corazón de California. Ya sea que estés buscando un descanso relajante, una aventura emocionante o simplemente un lugar especial para crear recuerdos inolvidables, estamos aquí para hacer que tu estadía sea inolvidable.
+  En Escuela Técnica Isaías Medina Angarita, nuestra misión es ofrecerte la mejor Educación Técnica en Ciencias Agrícolas y Pecuarias y Bachiller.
   
-  ¿Qué puedes esperar de Elysium?
-  - 🏖️ Ubicación privilegiada: Con vistas espectaculares y cercanía a las mejores atracciones de California.
-  - 🍷 Gastronomía de clase mundial: Saborea los mejores platos en nuestros restaurantes exclusivos.
-  - 💆‍♀️ Bienestar y relajación: Disfruta de nuestro spa y áreas recreativas diseñadas para tu confort.
+  ¿Qué puedes esperar de Escuela Técnica Isaías Medina Angarita?
+  - 🏖️ Unidad de Producción Agrícola
+  - 🍷 Servicio de Comedor
+  - 💆‍♀️ Bienestar Estudiantil y Transporte
   
-  Estamos ansiosos por darte la bienvenida personalmente y ayudarte a descubrir todo lo que Elysium tiene para ofrecer.
   
-  Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. ¡Estamos aquí para ti!
   
-  ¡Vive una experiencia única en Elysium!
-  El equipo de Elysium Hotel & Resort.
+  ¡Vive un aprendizaje Completo!
+  El equipo de Escuela Técnica Isaías Medina Angarita.
   
   Contacto:
-  📧 info@elysiumhotel.com
-  📞 +1-800-123-4567
+  📧 etaima.tecnica@gmailcom
+  📞 +58 2777576584
   🌐 www.elysiumhotel.com`,
       html: `
         <p>Hola <strong>${username}</strong>,</p>
-        <p>¡Gracias por registrarte en <strong>Elysium Hotel & Resort</strong>! Nos alegra tenerte como parte de nuestra exclusiva comunidad de huéspedes.</p>
-        <p>En <strong>Elysium</strong>, nuestra misión es ofrecerte una experiencia única de lujo en el corazón de California. Ya sea que estés buscando un descanso relajante, una aventura emocionante o simplemente un lugar especial para crear recuerdos inolvidables, estamos aquí para hacer que tu estadía sea inolvidable.</p>
-        <p><strong>¿Qué puedes esperar de Elysium?</strong></p>
+        <p>¡Gracias por registrarte en <strong>Escuela Técnica Isaías Medina Angarita</strong>! Nos alegra tenerte como parte de nuestra sociedad de aprendizaje</p>
+        <p>En <strong>Escuela Técnica Isaías Medina Angarita</strong>, En Escuela Técnica Isaías Medina Angarita, nuestra misión es ofrecerte la mejor Educación Técnica en Ciencias Agrícolas y Pecuarias y Bachiller.</p>
+        <p><strong>¿Qué puedes esperar de la Escuela Técnica Isaías Medina Angarita?</strong></p>
         <ul>
-          <li>🏖️ <strong>Ubicación privilegiada</strong>: Con vistas espectaculares y cercanía a las mejores atracciones de California.</li>
-          <li>🍷 <strong>Gastronomía de clase mundial</strong>: Saborea los mejores platos en nuestros restaurantes exclusivos.</li>
-          <li>💆‍♀️ <strong>Bienestar y relajación</strong>: Disfruta de nuestro spa y áreas recreativas diseñadas para tu confort.</li>
+          <li>🏖️ <strong>Unidad de Producción Agrícola</strong>:Porcino, Acuicula y Bovino.</li>
+          <li>🍷 <strong>Servicio de Comedor</strong>: CNAE.</li>
+          <li>💆‍♀️ <strong>Bienestar Estudiantil y Transporte
+  </strong>: Bus y Jeep.</li>
         </ul>
-        <p>Estamos ansiosos por darte la bienvenida personalmente y ayudarte a descubrir todo lo que <strong>Elysium</strong> tiene para ofrecer.</p>
-        <p>Si tienes alguna pregunta o necesitas asistencia, no dudes en contactarnos. ¡Estamos aquí para ti!</p>
-        <p><strong>¡Vive una experiencia única en Elysium!</strong><br>
-        El equipo de Elysium Hotel & Resort</p>
+        
         <p><strong>Contacto:</strong><br>
-        📧 info@elysiumhotel.com<br>
-        📞 +1-800-123-4567<br>
-        🌐 <a href="https://www.elysiumhotel.com">www.elysiumhotel.com</a></p>
+         Contacto:
+  📧 etaima.tecnica@gmailcom
+  📞 +58 2777576584
+  🌐 www.elysiumhotel.com</p>
       `,
     };
 
     await this.transporter.sendMail(mailOptions);
   }
 
-  async sendReservationEmail(user: User, room: Room, reservation: Reservation): Promise<void> {
-   
+  async sendReservationEmail(
+    user: User,
+    room: Room,
+    reservation: Reservation,
+  ): Promise<void> {
     const mailOptions = {
-      from: '"Elysium Hotel & Resort" <tu-email@gmail.com>',
-      to:user.email,
-      subject: 'Detalles de tu reservación en Elysium Hotel & Resort',
+      from: '"Escuela Técnica Isaías Medina Angarita" <tu-email@gmail.com>',
+      to: user.email,
+      subject: 'Solicitud de Cupo',
       text: `Hola ${user.name},
   
       Tu reservación ha sido confirmada con los siguientes detalles:
@@ -86,55 +85,50 @@ export class NotificationsService {
       - Descripción: ${room.description}
       - Estado del pago: ${reservation.paymentStatus}
       
-      Estamos emocionados de recibirte pronto en Elysium Hotel & Resort. Si tienes preguntas o necesitas asistencia, no dudes en contactarnos.
+      Estamos emocionados de recibirte pronto en Nuestra Istitución. Si tienes preguntas o necesitas asistencia, no dudes en contactarnos.
   
       ¡Gracias por elegirnos!
   
-      Elysium Hotel & Resort
-      📧 info@elysiumhotel.com
-      📞 +1-800-123-4567
-      🌐 www.elysiumhotel.com`,
+      Escuela Técnica Isaías Medina Angarita
+      📧 etaima.tecnica@gmail.com
+      📞 +58 02777576584
+      🌐 www.etima.com`,
       html: `
         <p>Hola, ${user.name}</p>
         <p>Tu reservación ha sido confirmada con los siguientes detalles:</p>
         <ul>
-          <li><strong>Habitación:</strong> ${room.title} (${room.size}, ${room.beds} cama(s))</li>
-          <li><strong>Precio por noche:</strong> $${room.price}</li>
-          <li><strong>Check-in:</strong> ${reservation.checkInDate.toDateString()}</li>
-          <li><strong>Check-out:</strong> ${reservation.checkOutDate.toDateString()}</li>
+          <li><strong>Habitación:</strong> ${room.title} )</li>
           <li><strong>Descripción:</strong> ${room.description}</li>
         </ul>
         <p>Estamos emocionados de recibirte pronto en <strong>Elysium Hotel & Resort</strong>. Si tienes preguntas o necesitas asistencia, no dudes en contactarnos.</p>
         <p><strong>¡Gracias por elegirnos!</strong><br>
-        Elysium Hotel & Resort<br>
-        📧 info@elysiumhotel.com<br>
-        📞 +1-800-123-4567<br>
-        🌐 <a href="https://www.elysiumhotel.com">www.elysiumhotel.com</a></p>
+        Escuela Técnica Isaías Medina Angarita<br>
+      📧 etaima.tecnica@gmail.com<br>
+       📞 +58 02777576584 <br>
+        🌐 <a href="https://www.etima.com">www.etima.com</a></p>
       `,
     };
-    
-    
+
     await this.transporter.sendMail(mailOptions);
   }
 
-
-  async sendReminderNotification(user: User, room: Room, reservation: Reservation): Promise<void> {
-  
+  async sendReminderNotification(
+    user: User,
+    room: Room,
+    reservation: Reservation,
+  ): Promise<void> {
     const checkInDate = new Date(reservation.checkInDate);
     const checkOutDate = new Date(reservation.checkOutDate);
 
-
     const mailOptions = {
-      from: '"Elysium Hotel & Resort" <tu-email@gmail.com>',
+      from: '"Escuela Técnica Isaías Medina Angarita" <etima@gmail.com>',
       to: user.email,
       subject: '⏳ ¡Última oportunidad para pagar tu reservación! ⏳',
       text: `Hola ${user.name},
       
       Queremos recordarte que tu reservación está a punto de expirar. Aquí están los detalles:
-      - Habitación: ${room.title} (${room.size}, ${room.beds} cama(s))
-      - Check-in: ${checkInDate.toDateString()}
-      - Check-out: ${checkOutDate.toDateString()}
-      - Estado del pago: ${reservation.paymentStatus}
+      - Habitación: ${room.title} )
+      
       
       Por favor, realiza tu pago dentro de las próximas 12 horas para asegurar tu reservación.
       
@@ -148,25 +142,26 @@ export class NotificationsService {
         <p>Hola <strong>${user.name}</strong>,</p>
         <p>Queremos recordarte que tu reservación está a punto de expirar. Aquí están los detalles:</p>
         <ul>
-          <li><strong>Habitación:</strong> ${room.title} (${room.size}, ${room.beds} cama(s))</li>
-          <li><strong>Check-in:</strong> ${checkInDate.toDateString()}</li>
-          <li><strong>Check-out:</strong> ${checkOutDate.toDateString()}</li>
-          <li><strong>Estado del pago:</strong> ${reservation.paymentStatus}</li>
+          <li><strong>Habitación:</strong> ${room.title} </li>
+          
         </ul>
         <p><strong>Por favor, realiza tu pago dentro de las próximas 12 horas para asegurar tu reservación.</strong></p>
         <p>Si necesitas asistencia, contáctanos.</p>
-        <p><strong>Elysium Hotel & Resort</strong><br>
-        📧 info@elysiumhotel.com<br>
-        📞 +1-800-123-4567<br>
-        🌐 <a href="https://www.elysiumhotel.com">www.elysiumhotel.com</a></p>
+        <p><strong>Escuela Técnica Isaías Medina Angarita</strong><br>
+
+      📧 etaima.tecnica@gmail.com<br>
+       📞 +58 02777576584 <br>
+        🌐 <a href="https://www.etima.com">www.etima.com</a></p>
       `,
     };
-  
+
     await this.transporter.sendMail(mailOptions);
   }
 
-  async sendDeletionNotification(user: User, reservation: Reservation): Promise<void> {
-      
+  async sendDeletionNotification(
+    user: User,
+    reservation: Reservation,
+  ): Promise<void> {
     const checkInDate = new Date(reservation.checkInDate);
     const checkOutDate = new Date(reservation.checkOutDate);
 
@@ -200,18 +195,23 @@ export class NotificationsService {
         🌐 <a href="https://www.elysiumhotel.com">www.elysiumhotel.com</a></p>
       `,
     };
-  
+
     await this.transporter.sendMail(mailOptions);
   }
 
-  async sendPaymentSuccessNotification(user: User, room: Room, reservation: Reservation): Promise<void> {
+  async sendPaymentSuccessNotification(
+    user: User,
+    room: Room,
+    reservation: Reservation,
+  ): Promise<void> {
     const checkInDate = new Date(reservation.checkInDate);
     const checkOutDate = new Date(reservation.checkOutDate);
-  
+
     const mailOptions = {
       from: '"Elysium Hotel & Resort" <tu-email@gmail.com>',
       to: user.email,
-      subject: '✅ Pago confirmado para tu reservación en Elysium Hotel & Resort ✅',
+      subject:
+        '✅ Pago confirmado para tu reservación en Elysium Hotel & Resort ✅',
       text: `Hola ${user.name},
       
       ¡Nos complace informarte que tu pago ha sido confirmado con éxito! Aquí están los detalles de tu reservación:
@@ -243,7 +243,7 @@ export class NotificationsService {
         🌐 <a href="https://www.elysiumhotel.com">www.elysiumhotel.com</a></p>
       `,
     };
-  
+
     await this.transporter.sendMail(mailOptions);
   }
 }
