@@ -242,8 +242,8 @@ const RegisterForm = () => {
               <option value="" disabled>
                 Selecciona una opción
               </option>
-              <option value="luxury">Media Técnica</option>
-              <option value="standard">Media Profesional</option>
+              <option value="luxury">Media Técnica Profesional</option>
+              <option value="standard">Media General</option>
             </select>
             <span
               className={`text-red-500 text-xs mt-1 ${errors.roomType ? "" : "invisible"

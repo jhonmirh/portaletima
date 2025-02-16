@@ -4,8 +4,8 @@ import { validateTestimonials } from "@/helpers/validatetestimonials";
 import { useLoggin } from "@/context/logginContext";
 import axios from "axios";
 import Swal from "sweetalert2";
-import emailjs from "emailjs-com"; // Importar EmailJS
-import Image from "next/image"; // Importar Image de next/image
+import emailjs from "emailjs-com";
+import Image from "next/image";
 
 interface TestimonialFormData {
   name: string;
@@ -83,15 +83,15 @@ const TestimonialForm = () => {
         });
 
         await emailjs.send(
-          "service_clpikcu",
-          "template_v4ea3gi",
+          "service_5h68nwk",
+          "template_etncikt",
           {
             user_name: form.name,
             user_email: form.email,
             user_message: form.message,
             user_rating: form.rating,
           },
-          "5sj5rQFeGjN3K-g-D"
+          "UlUJ0fDDrYTp_ASAp"
         );
 
         Swal.fire({

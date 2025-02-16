@@ -46,7 +46,7 @@ const ProtectedClient: React.FC<{ children: React.ReactNode }> = ({ children }) 
   }
  
 
-  if (userData?.userData.role.name === "Cliente" || userData?.userData.role.name === "Administrador") {
+  if (userData?.userData.role.name === "Representante" || userData?.userData.role.name === "Administrador") {
     return <>{children}</>;
   }
   return (

@@ -106,7 +106,7 @@ const LoginGoogle: React.FC<IloginPropsGoogle> = ({ emailgoogle, password }) => 
         Bienvenido
       </p>
       <p className="text-xl text-center text-gray-600 drop-shadow-md mt-2">
-        HOTEL Y RESORT DE LUJO ELYSIUM
+        ESCUELA TECNICA ISAIAS MEDINA ANGARITA
       </p>
     </div>
   );

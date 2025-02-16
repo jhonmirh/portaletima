@@ -1,11 +1,24 @@
 import { TestimonialModalProps } from "./Type.Testimonials";
-
+import emailjs from "emailjs-com";
 const TestimonialModal = ({ testimonial, onClose, onStatusChange }: TestimonialModalProps) => {
   const { username, email, testimonial: message, status, id } = testimonial;
 
-  const handleStatusToggle = () => {
+  const handleStatusToggle = async () => {
     const newStatus = status === "Pendiente" ? "Publicado" : "Pendiente";
     onStatusChange(id, newStatus);
+    if (newStatus === "Publicado") {
+      await emailjs.send(
+        "service_5h68nwk",
+        "template_n80fc9d",
+        {
+          user_name: username,
+          user_email: email,
+          user_message: message,
+          
+        },
+        "UlUJ0fDDrYTp_ASAp"
+      );
+    }
   };
 
   return (
